@@ -101,6 +101,7 @@ body {
     height: auto;
     min-height: 100vh;
     width: 100%;
+    padding: 50px;
 }
 
 .about-me-container h1 {
@@ -194,6 +195,7 @@ body {
     height: auto;
     min-height: 100vh;
     width: 100%;
+    padding: 50px;
 }
 
 .my-services-container h1 {
@@ -261,8 +263,10 @@ body {
 /* My Experience Section */
 
 .my-exp-container {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     width: 100%;
+    padding: 50px;
 }
 
 .my-exp-container h1 {
@@ -347,4 +351,50 @@ body {
 
 .timeline-second-item {
     left: 50%;
+}
+
+/* Portfolio Section */
+
+.portfolio-container {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.portfolio-container h1 {
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 40px;
+    color: var(--yellow-main); 
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 auto;
+}
+
+.portfolio-item {
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid var(--yellow-main);
+    border-radius: 3px;
+    overflow: hidden;
+    
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-item-info {
+    position: absolute;
+    justify-content: end;
 }
